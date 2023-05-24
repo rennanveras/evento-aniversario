@@ -1,0 +1,52 @@
+@use 'variables';
+
+.hero{
+    padding-top:64px;
+    padding-bottom: 100px;
+    background-image: url(../img/disney.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+
+    .container{
+        position: relative;
+    }
+    &::before{
+        content:'';
+        background-color: rgba(0,0,0,.2);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__logo{
+        padding-bottom:64px ;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 1px 5px variables.$colorTextSegundary;
+    }
+    
+    &__desc{
+        font-size: 40px;
+        padding-bottom: 64px;
+        text-shadow: 1px 1px 3px variables.$colorTextSegundary;
+
+        span{
+            color: #fdbb2d;
+            font-weight: bold;
+        }
+    }
+
+    @media (max-width:640px) {
+        &__logo{
+            font-size: 30px;
+            padding-bottom: 34px;
+        }
+        &__desc{
+            font-size:24px;
+        }
+    }
+}
