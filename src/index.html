@@ -9,18 +9,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
         <div class="container">        
-            <h1 class="hero__logo"><em>Aniversário do Rennan</em></h1>
+            <h1 class="hero__logo"><em>Aniversário fantasia</em></h1>
             <p class="hero__desc">
                 Venha participar do melhor Aniversário a fantasia na Disney <br>
-                <span>10d 8h 10m 01s</span>
+                <span id="contador">00d 00h 00m 00s</span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <strong>Localização</strong>
+                        Disney - Flórida - US
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <strong>Preço</strong>
+                        $150,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <strong>Quando</strong>
+                        07/12/2023 às 13h
+                    </li>
+                </ul>
+                <a class="infos-bar__infos__button" href="">Garantir minha vaga</a>
+            </div>
         </div>
     </header>
+    <section class="event event--fantasias">
+        <div class="container" data-aos="fade-right" data-aos-duration="1500">
+            <div class="event__desc">
+                <h2 class="event__desc__title">Venha fantasiado</h2>
+                <p class="event__desc__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur id saepe aut nam totam quibusdam in amet, tempore commodi omnis atque? Blanditiis saepe tempore voluptas maiores voluptates minus et similique! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus tenetur rem distinctio dolor itaque nulla commodi! Et labore officia doloremque deleniti placeat nulla veritatis, suscipit, autem, sit laborum necessitatibus?</p>
+            </div>
+            <img class="event__img" src="img/fantasia.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--brinque event--image-left">
+        <div class="container" data-aos="fade-left" data-aos-duration="1500">
+            <div class="event__desc">
+                <h2 class="event__desc__title">Brinque em qualquer brinquedo</h2>
+                <p class="event__desc__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur id saepe aut nam totam quibusdam in amet, tempore commodi omnis atque? Blanditiis saepe tempore voluptas maiores voluptates minus et similique! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus tenetur rem distinctio dolor itaque nulla commodi! Et labore officia doloremque deleniti placeat nulla veritatis, suscipit, autem, sit laborum necessitatibus?</p>
+            </div>
+            <img class="event__img" src="img/parque.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--alimentacao">
+        <div class="container" data-aos="fade-right" data-aos-duration="1500">
+            <div class="event__desc">
+                <h2 class="event__desc__title">Alimentação gratuita</h2>
+                <p class="event__desc__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur id saepe aut nam totam quibusdam in amet, tempore commodi omnis atque? Blanditiis saepe tempore voluptas maiores voluptates minus et similique! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus tenetur rem distinctio dolor itaque nulla commodi! Et labore officia doloremque deleniti placeat nulla veritatis, suscipit, autem, sit laborum necessitatibus?</p>
+            </div>
+            <img class="event__img" src="img/mesa-comida.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--brindes event--image-left">
+        <div class="container" data-aos="fade-left" data-aos-duration="1500">
+            <div class="event__desc">
+                <h2 class="event__desc__title">Brindes especiais</h2>
+                <p class="event__desc__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur id saepe aut nam totam quibusdam in amet, tempore commodi omnis atque? Blanditiis saepe tempore voluptas maiores voluptates minus et similique! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus tenetur rem distinctio dolor itaque nulla commodi! Et labore officia doloremque deleniti placeat nulla veritatis, suscipit, autem, sit laborum necessitatibus?</p>
+            </div>
+            <img class="event__img" src="img/baloes1.jpg" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">           
+            <div class="footer__content">
+                <div class="footer__content__social">
+                    <a class="footer__content__social__item"  href="https://github.com/rennanveras" target="_blank">
+                        <p class="footer__content__social__item__text">rennanveras</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                    </a>
+                    <a class="footer__content__social__item" target="_blank" href="https://www.linkedin.com/in/rennan-veras/">
+                        <p class="footer__content__social__item__text">Rennan veras</p>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
+                    </a>
+                </div>
+                <p class="footer__content__copy">&copy; Rennan Veras -  Todos os direitos reservados - 2023 </p>
+            </div>
+        </div>
+    </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

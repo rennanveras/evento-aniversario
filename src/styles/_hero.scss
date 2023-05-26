@@ -7,9 +7,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
     position: relative;
-
+    
     .container{
         position: relative;
     }
@@ -22,20 +21,23 @@
         top: 0;
         left: 0;
     }
-
+    
     &__logo{
+        text-align: center;
         padding-bottom:64px ;
         font-family: 'Montserrat', sans-serif;
         text-shadow: 1px 1px 5px variables.$colorTextSegundary;
     }
     
     &__desc{
+        text-align: center;
         font-size: 40px;
         padding-bottom: 64px;
         text-shadow: 1px 1px 3px variables.$colorTextSegundary;
+        line-height: 56px;
 
         span{
-            color: #fdbb2d;
+            color: variables.$yellow;
             font-weight: bold;
         }
     }
@@ -46,7 +48,9 @@
             padding-bottom: 34px;
         }
         &__desc{
+            line-height: 34px;
             font-size:24px;
+            padding-bottom: 34px;
         }
     }
 }

@@ -1,0 +1,59 @@
+@use '../variables';
+
+.infos-bar{
+    padding: 16px 24px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &__infos{
+        display: flex;
+        gap: 40px;
+        
+        &__item{
+            color: variables.$colorTextSegundary;
+            font-size: 14px;
+            
+            strong{
+                color: variables.$colorTextSegundary;
+                display: block;
+                padding-bottom:8px;
+                font-size: 18px;
+            }
+        }
+
+        &__button{
+            padding: 12px;
+            font-size: 18px;
+            background-color: variables.$blue;
+            font-weight:bold;
+            text-decoration: none;
+            white-space: nowrap;
+            margin-left: 10px;
+            text-align: center;
+
+            &:hover{
+                background-color: darken(variables.$blue, 5%);
+            }
+        }
+    }
+
+    @media (max-width:640px) {
+        display: block;
+        &__infos{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+            
+            &__button{
+                display: block;
+                width: 100%;
+                margin-left: 0px;
+            }
+        }
+    }
+}

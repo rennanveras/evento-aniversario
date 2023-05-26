@@ -1,5 +1,8 @@
 @use 'variables';
 @use 'hero';
+@use './components/infos_bar';
+@use 'events';
+@use 'footer';
 
 *{
     margin: 0;
@@ -7,6 +10,7 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
     color: variables.$colorTextPrimary;
+    list-style: none;
 }
 
 .container{
