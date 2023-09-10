@@ -5,18 +5,22 @@
     
 
     &--fantasias{
-        background: linear-gradient(180deg, #3494E6 0%, #EC6EAD 100%);
+        background: rgb(15,94,173);
+        background: linear-gradient(0deg, rgba(15,94,173,1) 42%, rgba(32,168,218,1) 100%);  
     }
 
     &--brinque{
-        background: linear-gradient(180deg, #EC6EAD 0%,  #03498f 100%);
+        background: rgb(15,94,173);
+        background: linear-gradient(0deg,rgba(32,168,218,1)  42%,  rgba(15,94,173,1) 100%);  
     }
 
     &--alimentacao{
-        background: linear-gradient(180deg, #03498f 0%, #3494E6 100%);
+        background: rgb(15,94,173);
+        background: linear-gradient(0deg, rgba(15,94,173,1) 42%, rgba(32,168,218,1) 100%);
     }
     &--brindes{
-        background: linear-gradient(180deg, #3494E6 0%, #EC6EAD 100%);
+        background: rgb(15,94,173);
+        background: linear-gradient(0deg,rgba(32,168,218,1)  42%,  rgba(15,94,173,1) 100%);
     }
 
     &--image-left{
